@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Promedio</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/notas.js"></script>
+</head>
+<body>
+    <header>Calculadora de Promedio</header>
+    <div class="container">
+        <p>Agrega las notas sin punto ni coma <br>como se muestra en el recuadro.</p>
+
+        <div class="ejemplo-container">
+            <div class="ejemplo-item">
+                <label>Nota</label>
+                <input type="text" value="70" readonly>
+            </div>
+            <div class="ejemplo-item">
+                <label>%</label>
+                <input type="text" value="30" readonly>
+            </div>
+        </div>
+
+        <div id="notas-container"></div>
+        
+        <button onclick="agregarNota()">Agregar Nota</button>
+        <p id="resultado">Promedio Final: --</p>
+    </div>
+</body>
+</html>
